@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CC-50 | Violia Ruana</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar-container">
+    <div class="header-content">
+      <div class="logo">
+        <img src="img/dicoding-header-logo.png" alt="Dicoding Indonesia">
+      </div>
+      <h1 class="title">Pemrograman Web</h1>
+    </div>
+    <nav class="nav-list">
+      <ul>
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content">
+      <article id="personal" class="personal-info">
+        <h1 class="title">Hello everyone!👋</h1>
+          <h1 class="name">I am Violia Ruana Nur&apos;aini Sagita</h1>
+        <p>
+          I&apos;d love to share a bit about my journey with you all. I embarked on my college adventure in 2021 at Universitas Negeri Surabaya, pursuing Informatics Engineering major. Now, as I begin my 7th semester, I&apos;m excited to be part of the Bangkit Program&apos;s Cloud Computing Learning Path. Currently, I&apos;m in the Cloud Computing-50 class, guided by the knowledgeable Kak Muhammad Arif Ramadhani.
+        </p>
+      </article>
+
+      <article id="education" class="education">
+        <h1 class="title">Education Level</h1>
+  
+        <div class="education-content">
+          <section class="high-school-box">
+            <h2 class="high-school">SMA Negeri 1 Krian</h2>
+  
+            <div class="collapsible" onclick="toggleList('high-school')">
+              <span id="arrow-high-school" class="arrow arrow-right"></span>
+              <span id="text-high-school">See details</span>
+            </div>
+  
+            <div id="content-high-school" class="collapsible-content date-content">
+              <i class="fas fa-graduation-cap"></i>
+              <span>July 2019 - May 2021</span>
+            </div>
+  
+            <div id="major-high-school" class="collapsible-content major-content">
+              <i class="fas fa-book"></i>
+              <span>Mathematics and Science</span>
+            </div>
+  
+            <div id="gpa-high-school" class="collapsible-content gpa-content">
+              <i class="fas fa-trophy"></i>
+              <span>GPA : 93.73/100.00</span>
+            </div>
+  
+            <p>
+              Graduated with an acceleration program in 2 years, completing the curriculum 50% faster than the standard duration.
+            </p>
+          </section>
+  
+          <section class="university-box">
+            <h2 class="university">Universitas Negeri Surabaya</h2>
+  
+            <div class="collapsible" onclick="toggleList('university')">
+              <span id="arrow-university" class="arrow arrow-right"></span>
+              <span id="text-university">See details</span>
+            </div>
+  
+            <div id="content-university" class="collapsible-content date-content">
+              <i class="fas fa-graduation-cap"></i>
+              <span>August 2021 - Present</span>
+            </div>
+  
+            <div id="major-university" class="collapsible-content major-content">
+              <i class="fas fa-book"></i>
+              <span>Informatics Engineering</span>
+            </div>
+  
+            <div id="gpa-university" class="collapsible-content gpa-content">
+              <i class="fas fa-trophy"></i>
+              <span>GPA : 3.87/4.00</span>
+            </div>
+  
+            <p>
+              Relevant Subjects: Basic Programming, Software Engineering, Databases, Software Project Management, Software Analysis and Design, and Data Structures.
+            </p>
+          </section>
+        </div>
+      </article>
+        
+      <article id="portfolio" class="portfolio">
+        <h1 class="title">My Portfolio</h1>
+        <div class="portfolio-content">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="img/mobile-attendance.svg" alt="Mobile Attendance">
+            </div>
+                  
+            <div class="mySlides">
+              <img src="img/dot-coaching.svg" alt="Dot Coaching">
+            </div>
+                  
+            <div class="mySlides">
+              <img src="img/zenta-cv.svg" alt="Zenta CV">
+            </div>
+                  
+            <div class="mySlides">
+              <img src="img/calculator.svg" alt="Calculator">
+            </div>
+                  
+            <div class="mySlides">
+              <img src="img/sky-printing.svg" alt="Sky Printing">
+            </div>
+                  
+            <div class="mySlides">
+              <img src="img/karya-lokal.svg" alt="Karya Lokal">
+            </div>
+            
+            <div class="mySlides">
+              <img src="img/leafy-lane.svg" alt="Leafy Lane">
+            </div>
+
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+            </div> 
+          </div>
+          
+          <div class="project-description">
+            <h1 class="title" id="project-title"></h1> 
+            <p id="project-description"></p>
+            <button>More Details</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <aside id="contact">
+      <article class="card">
+        <header>
+          <h1 class="title">Get to know me</h1>
+          <figure>
+            <img src="img/foto-pribadi.svg" alt="Violia Ruana"/>
+          </figure>
+        </header>
+
+        <section class="contact-me">
+          <h3 class="contact">Reach me out :</h3>
+          <div class="social-media">
+            <ul>
+              <li><a href="mailto:violiaruana@gmail.com"><i class="fab fa-solid fa-envelope"></i></a></li>
+              <li><a href="https://github.com/violiarns28"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/violia-ruana/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://wa.me/+6285234258863"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+          </div>            
+        </section>
+      </article>
+    </aside>
+  </main>
+
+  <script src="js/script.js"></script>
+
+  <footer>&#169; 2024, CC-50 | VIOLIA RUANA NUR&apos;AINI SAGITA</footer>
+</body>
+</html>
