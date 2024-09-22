@@ -39,7 +39,7 @@ let isFirstLoad = true;
 const projectDescriptions = [
   {
     title: "Employee Attendance Mobile App",
-    description: "This project was my latest intern project at PT Bantu Pengusaha Bertumbuh as an IT Intern. Its is an apps that used to track the employee's presence in the office.I developed it with Flutter.",
+    description: "This project was my latest intern project at PT Bantu Pengusaha Bertumbuh as an IT Intern. It is an apps that used to track the employee's presence in the office. I developed it with Flutter.",
     url:"https://github.com/violiarns28/bantu_pengusaha",
   },
 
@@ -69,10 +69,10 @@ const projectDescriptions = [
 
   {
     title: "Karya Lokal",
-    description: "This is also the final project in 5th semester with my friends. This is a marketplace designed for local artists to showcase and sell their work online. My jobdesc is also to designed the UI.UX and implemented the frontend, too.",
+    description: "This is also the final project in 5th semester with my friends. This is a marketplace designed for local artists to showcase and sell their work online. My jobdesc is also to designed the UI/UX and implemented the frontend, too.",
     url:"https://github.com/zenta-dev/karya-lokal",
   },
-  
+
   {
     title: "Leafy Lane",
     description: "Leafy lane is an e-commerce project focused on selling decorative plants. This one is my first experience to try Bootstrap. At this time, I just design the UI.",
@@ -91,8 +91,6 @@ function updateProjectContent(n) {
   descriptionElement.textContent = currentProject.description;
   moreDetailsButton.setAttribute('onclick', `window.open('${currentProject.url}', '_blank')`);
 }
-
-
 
 function showSlides(n) {
   let i;

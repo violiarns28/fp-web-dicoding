@@ -11,14 +11,12 @@ header {
 }
 
 html, body {
-  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
   flex: 1;
-  width: 100%;
   align-items: center;
 }
 
@@ -34,7 +32,7 @@ main {
 }
 
 .navbar-container {
-  width: 100%;
+  width: 100vw;
   padding-block: 1rem;
   margin-inline: auto;
   display: flex;
@@ -90,13 +88,11 @@ main {
   width: 100px;
 }
 
-
 #content {
   flex-direction: column;
   text-align: center;
   display: flex;
   width: 75%;
-
 }
 
 .personal-info {
@@ -109,7 +105,6 @@ main {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  width: 100%;
   padding: 48px;
 }
 
@@ -126,6 +121,7 @@ main {
 .personal-info .title {
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .personal-info .name {
@@ -387,12 +383,11 @@ main {
   font-weight: 500;
 }
 
-
 #contact {
   display: flex;
   justify-content: center;
   align-items:start;
-  width: 25%
+  width: 25%;
 }
 
 .card {
@@ -403,7 +398,6 @@ main {
   justify-content: center;
   align-items: center;
   background-color:#F9F8FD;
-  width: 400px;
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -411,7 +405,7 @@ main {
 }
 
 .card header .title {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: black;
   margin-block: 1rem;
@@ -479,6 +473,62 @@ footer {
   text-align: center;
 }
 
+
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    width: 100%;
+  }
+
+  .personal-info .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    width: 100vh;
+  }
+
+  .navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    column-gap: 0.5rem;
+  }
+
+  .education-content {
+    flex-direction: column;
+  }
+
+  .portfolio-content {
+    flex-direction: column;
+  }
+
+  .project-description p {
+    text-align: justify;
+  }
+
+  .project-description .title {
+    font-size: 2.2rem; 
+    font-weight: 600;
+    color: #943155;
+    margin-bottom: 1.5rem; 
+    text-align: center
+  }
+
+  footer {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    background-color: #943155;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   main {
     flex-direction: column;
@@ -525,7 +575,7 @@ footer {
     text-align: center;
     display: flex;
     width: 100%;
-   
+    flex: 1;
   }
 
   #contact {
@@ -533,6 +583,14 @@ footer {
     justify-content: center;
     align-items:start;
     width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    background-color: #943155;
+    text-align: center;
   }
 }
 
